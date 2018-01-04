@@ -16,7 +16,7 @@ before_build:
 build_script:
   - cmd: dotnet publish SimpleSoft.AspNetCore.FacebookGraphApi.sln
 after_build:
-  - cmd: dotnet pack -Version 1.0.%APPVEYOR_BUILD_VERSION% SimpleSoft.AspNetCore.FacebookGraphApi.csproj
+  - cmd: dotnet pack SimpleSoft.AspNetCore.FacebookGraphApi.csproj /p:Version=1.0.%APPVEYOR_BUILD_VERSION%
 artifacts:
  - path: '**\*.nupkg'
    name: NetCore-Facebook-Login
