@@ -16,9 +16,9 @@ before_build:
 build_script:
   - cmd: dotnet publish SimpleSoft.AspNetCore.FacebookGraphApi.sln
 after_build:
-  # For once the build has completed
+  - cmd: dotnet pack SimpleSoft.AspNetCore.FacebookGraphApi.csproj
 artifacts:
- - path: '\bin\Debug\netstandard1.4\publish'
+ - path: '\bin\Debug\'
    name: NetCore-Facebook-Login
    type: WebDeployPackage
 clone_depth: 1
