@@ -18,9 +18,9 @@ build_script:
 after_build:
   - cmd: dotnet pack SimpleSoft.AspNetCore.FacebookGraphApi.csproj
 artifacts:
- - path: '\bin\Debug\'
+ - path: '**\*.nupkg'
    name: NetCore-Facebook-Login
-   type: WebDeployPackage
+   type: NuGetPackage
 clone_depth: 1
 test_script:
   # restore packages for our unit tests
