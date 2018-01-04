@@ -3,7 +3,7 @@
   <metadata>
     <id>SimpleSoft.AspNetCore.FacebookGraphApi</id>
     <version>$version$</version>
-    <title>$title$</title>
+    <title>Net Core Facebook Login Api</title>
     <authors>Vsudakov</authors>
     <owners>Vsudakov</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
