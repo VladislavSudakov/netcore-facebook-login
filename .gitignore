@@ -5,3 +5,10 @@
 /bin
 /.vs/SimpleSoft.AspNetCore.FacebookGraphApi/v15/.suo
 /obj
+/api
+/docfx_project
+/log.txt
+/.vs/config/applicationhost.config
+/.vs/SimpleSoft.AspNetCore.FacebookGraphApi/v15/Server/sqlite3
+/src/obj
+/src/bin
