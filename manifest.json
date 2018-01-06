@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/programming/projects/github/netcore-facebook-login/docs",
+  "source_base_path": "C:/projects/netcore-facebook-login/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSoft.AspNetCore.FacebookGraphApi.Exceptions.FacebookApiException.html",
-          "hash": "On3hZzBptOVFx2ji/v2wDg=="
+          "hash": "VhfMKMoZsPi1bpmmU/zwmA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -24,7 +24,7 @@
           "hash": "7NB9gM1onzrZNsEopWjU3A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces.IFacebookApiService.html",
-          "hash": "BU+y8zNqP6TsqGBVeVCkeA=="
+          "hash": "oUzq0sR/BTLw4Dlej5y2og=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces.IFacebookUser.html",
-          "hash": "IeCUNl4bgrsLRCTSXhyMKg=="
+          "hash": "qz7Y/5xP2awRxt+cRZZ9iw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces.IGraphApiConfiguration.html",
-          "hash": "Q+T2cXtD/P3ePQpYNOyz4Q=="
+          "hash": "yfcbtOiZmn5dyzjhqWUabg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "eb3Z9pEqUJj0cHeqBPzxww=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSoft.AspNetCore.FacebookGraphApi.Services.FacebookApiService.html",
-          "hash": "JQOJ4A4Org1wrQwKUXpqJQ=="
+          "hash": "no7ATJM7Oy8GKFZG2LllWQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "YHQkQTRTRE9UW3+dZ/yw4A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -108,10 +108,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "v3o5LPtpGugY2CefeT6PJw=="
+          "hash": "R5MMfHb1nQRj88dWbxULhw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -132,10 +132,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "8Cd5OzJ7CAdKsmG3Zur/rA=="
+          "hash": "jnICrgegRrhefqt0cFkzbg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -156,10 +156,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "4uxalSVLdN7kpTSfDmnetw=="
+          "hash": "lvrHbX7K1TsTyTKpnqZodw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -178,7 +178,8 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build"
       },
       "processors": {
@@ -187,20 +188,20 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing"
       },
       "processors": {}
