@@ -25,7 +25,7 @@ build_script:
 after_build:
   - cmd: dotnet pack src/SimpleSoft.AspNetCore.FacebookGraphApi.csproj /p:Version=%APPVEYOR_BUILD_VERSION%
   - ps: |
-          docfx src/docfx.json
+          docfx docs/docfx.json
           if ($lastexitcode -ne 0){
             throw [System.Exception] "docfx build failed with exit code $lastexitcode."
           }
