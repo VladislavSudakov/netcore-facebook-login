@@ -1,5 +1,12 @@
 version: '1.0.{build}'
 image: Visual Studio 2017
+environment:
+  currentBranch: "https://github.com/VladislavSudakov/netcore-facebook-login.git"
+  op_build_user: "VladislavSudakov"
+  op_build_user_email:
+    secure: zEIkuPkUH8R7UIddM//zZsDFNUI5cd3+rHRNVZoaZjw=
+  access_token:
+    secure: JZO2ktMxPXknVv5WsAwlHgOVtZdzn06ObTxhRhvpWyKDdmUDzs8kq8jf3kls1edj
 branches:
   only:
   - master
@@ -7,7 +14,7 @@ init:
   # Good practise, because Windows line endings are different from Unix/Linux ones
   - cmd: git config --global core.autocrlf true
 install:
-  # Install repo specific stuff here
+  - cinst docfx
 before_build:
   # Display .NET Core version
   - cmd: dotnet --version
@@ -17,6 +24,23 @@ build_script:
   - cmd: dotnet publish SimpleSoft.AspNetCore.FacebookGraphApi.sln
 after_build:
   - cmd: dotnet pack src/SimpleSoft.AspNetCore.FacebookGraphApi.csproj /p:Version=%APPVEYOR_BUILD_VERSION%
+  - ps: |
+          docfx src/docfx.json
+          if ($lastexitcode -ne 0){
+            throw [System.Exception] "docfx build failed with exit code $lastexitcode."
+          }
+            
+          git config --global credential.helper store
+          Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+          git config --global user.email $env:op_build_user_email
+          git config --global user.name $env:op_build_user
+          git clone $env:currentBranch -b gh-pages origin_site -q
+
+          Copy-Item origin_site/.git docs/_site -recurse
+          CD docs/_site
+          git add -A 2>&1
+          git commit -m "CI Updates" -q
+          git push origin gh-pages -q
 artifacts:
  - path: '**\*.nupkg'
    name: NetCore-Facebook-Login
