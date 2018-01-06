@@ -41,6 +41,11 @@ namespace SimpleSoft.AspNetCore.FacebookGraphApi.Services
 
             using (HttpClient client = new HttpClient())
             {
+                if (this.configuration.RequestTimeoutSeconds.HasValue)
+                {
+                    client.Timeout = TimeSpan.FromSeconds(this.configuration.RequestTimeoutSeconds.Value);
+                }
+                
                 var appToken = await this.AppAccessTokenCallAsync(client);
                 var isTokenValid = await this.DebugTokenCallAsync(client, token, appToken);
 

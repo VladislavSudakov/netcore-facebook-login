@@ -6,12 +6,12 @@
     public interface IGraphApiConfiguration
     {
         /// <summary>
-        /// Gets the application id. Should be provided.
+        /// Gets the application id. Should be provided. Find it in your facebook profile.
         /// </summary>
         string ApplicationId { get; }
 
         /// <summary>
-        /// Gets the application secret. Should be provided.
+        /// Gets the application secret. Should be provided. Find it in your facebook profile.
         /// </summary>
         string ApplicationSecret { get; }
 
@@ -29,5 +29,10 @@
         /// Gets the api url. Optional, by default uses 2.11 version graph api.
         /// </summary>
         string ApiUrl { get; }
+
+        /// <summary>
+        /// Gets the timeout of requests to facebook api in seconds. Optional.
+        /// </summary>
+        double? RequestTimeoutSeconds { get; }
     }
 }

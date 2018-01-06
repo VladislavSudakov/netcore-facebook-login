@@ -3,7 +3,8 @@
 namespace SimpleSoft.AspNetCore.FacebookGraphApi.Exceptions
 {
     /// <summary>
-    /// The facebook api exception.
+    /// The facebook api exception. Occurs if token verification completed with error
+    /// or if any request failed to complete.
     /// </summary>
     public class FacebookApiException : Exception
     {

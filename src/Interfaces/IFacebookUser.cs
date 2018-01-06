@@ -6,7 +6,7 @@
     public interface IFacebookUser
     {
         /// <summary>
-        /// Gets the user id.
+        /// Gets the user id in facebook.
         /// </summary>
         string UserId { get; }
 
