@@ -181,6 +181,18 @@ references:
   commentId: Overload:SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces.IGraphApiConfiguration.ProfilePictureWidth
   fullName: SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces.IGraphApiConfiguration.ProfilePictureWidth
   nameWithType: IGraphApiConfiguration.ProfilePictureWidth
+- uid: SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces.IGraphApiConfiguration.RequestTimeoutSeconds
+  name: RequestTimeoutSeconds
+  href: api/SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces.IGraphApiConfiguration.html#SimpleSoft_AspNetCore_FacebookGraphApi_Interfaces_IGraphApiConfiguration_RequestTimeoutSeconds
+  commentId: P:SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces.IGraphApiConfiguration.RequestTimeoutSeconds
+  fullName: SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces.IGraphApiConfiguration.RequestTimeoutSeconds
+  nameWithType: IGraphApiConfiguration.RequestTimeoutSeconds
+- uid: SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces.IGraphApiConfiguration.RequestTimeoutSeconds*
+  name: RequestTimeoutSeconds
+  href: api/SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces.IGraphApiConfiguration.html#SimpleSoft_AspNetCore_FacebookGraphApi_Interfaces_IGraphApiConfiguration_RequestTimeoutSeconds_
+  commentId: Overload:SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces.IGraphApiConfiguration.RequestTimeoutSeconds
+  fullName: SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces.IGraphApiConfiguration.RequestTimeoutSeconds
+  nameWithType: IGraphApiConfiguration.RequestTimeoutSeconds
 - uid: SimpleSoft.AspNetCore.FacebookGraphApi.Services
   name: SimpleSoft.AspNetCore.FacebookGraphApi.Services
   href: api/SimpleSoft.AspNetCore.FacebookGraphApi.Services.html
