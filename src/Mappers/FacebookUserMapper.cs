@@ -1,4 +1,5 @@
-﻿using SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces;
+﻿using System;
+using SimpleSoft.AspNetCore.FacebookGraphApi.Interfaces;
 using SimpleSoft.AspNetCore.FacebookGraphApi.Models;
 
 namespace SimpleSoft.AspNetCore.FacebookGraphApi.Mappers
@@ -7,6 +8,11 @@ namespace SimpleSoft.AspNetCore.FacebookGraphApi.Mappers
     {
         internal static IFacebookUser MapUser(UserProfileResponse model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
             return new FacebookUser
                        {
                            UserId = model.UserId,

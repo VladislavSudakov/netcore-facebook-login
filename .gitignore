@@ -12,3 +12,7 @@
 /.vs/SimpleSoft.AspNetCore.FacebookGraphApi/v15/Server/sqlite3
 /src/obj
 /src/bin
+/tests/SimpleSoft.AspNetCore.FacebookGraphApi.Tests/obj
+/tests/SimpleSoft.AspNetCore.FacebookGraphApi.Tests/bin/Debug/netstandard1.4
+/tests/SimpleSoft.AspNetCore.FacebookGraphApi.Tests/bin/Debug/netstandard1.5
+/tests/SimpleSoft.AspNetCore.FacebookGraphApi.Tests/bin/Debug/netcoreapp1.1
